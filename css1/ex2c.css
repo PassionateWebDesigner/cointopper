@@ -226,13 +226,7 @@ td{
         font-size:17px;
     }
     .butt1{
-        margin-top: 22px;
-        margin-left: 10px;
-    }
-    .butt2{
-        position:fixed;
-        top:34%;
-        margin: 0;
+        margin-left: 5px;
     }
     #bt{
         display: none;
