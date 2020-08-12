@@ -223,9 +223,15 @@ table{
 }
 td{
     padding: 27px;
-    color:blue;
+    color:#337ab7;
     font-weight: bold;
     font-size:20px;
+}
+.ch{
+    color:green;
+}
+.b{
+    color:navy;
 }
 .cardbox{
     width: 340px;
