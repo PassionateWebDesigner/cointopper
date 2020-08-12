@@ -543,4 +543,7 @@ footer{
     .img1{
         width: 270px;
     }
+    .text a{
+        font-size:15px;
+    }
 }
