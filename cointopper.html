@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Document</title>
-    <link rel="stylesheet" href="css1/ex2c.css">
+    <link rel="stylesheet" href="css/ex2c.css">
 </head>
 <body>
     <nav>
@@ -56,39 +56,49 @@
         <div class="slideshow-container">
             <div class="mySlides">
                 <div class="butt1" style="color: white;">
-                    <span>BitCoin</span>
+                    <span class="sp">BitCoin</span>
                     <br>
-                    <span>$9,120.78</span>
+                    <span class="sps"><b>$9,120.78</b></span>
                     <br>
-                    <span class="fa fa-angle-double-up" id="icon"></span> 4.46%
+                    <span class="fa fa-angle-double-up" id="icon" style="margin-left: -77px;"></span><span>4.46%</span>
+                    <br>
+                    <img  height="35" width="35" draggable="false" onmousedown="return false" src="images/bitcoin-btc.png" style="border-radius: 100%;border:1px solid orange;background: orange;float:right;margin-top: -20px;color: orange;">
                 </div>
                 <div class="butt1" style="background:-webkit-linear-gradient(left, #505050 1%, #282828 100%);color: white;">
-                    <span>BitCoin Dark</span>
+                    <span class="sp">NEM</span>
                     <br>
-                    <span>$16.23</span>
+                    <span class="sps"><b>$0.05432</b></span>
                     <br>
-                    <span class="fa fa-angle-double-up" id="icon"></span> 0.00%
+                    <span class="fa fa-angle-double-up" id="icon" style="margin-left: -77px";></span><span>0.00%</span>
+                    <br>
+                    <img height="35" width="35" draggable="false" onmousedown="return false" src="https://cointopper.com/images/thumb/nem-xem.png" style="border-radius:100%;border:1px solid black;float:right;margin-top: -20px;background: black;">
                 </div>
                 <div class="butt1" id="bt" style="background:-webkit-linear-gradient(left, #307088 1%, #F0A800 100%);color:white;">
-                    <span>Ethereum</span>
+                    <span class="sp">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ethereum</span>
                     <br>
-                    <span>$3.78</span>
+                    <span class="sps"><b>$3.78888</b></span>
                     <br>
-                    <span class="fa fa-angle-double-up" id="icon"></span> 3.39%
+                    <span class="fa fa-angle-double-up" id="icon" style="margin-left: -77px;"></span><span>3.39%</span>
+                    <br>
+                    <img src="images/ethereum-eth.png" alt="" width="35" height="35" style="border:1px solid orange;background: orange;" class="sps2">
                 </div>
-                <div class="butt1" id="bt" style="background:-webkit-linear-gradient(left, #F8A008 1%, #F8A040 100%);color: white;">
-                    <span>BitCoin</span>
+                <div class="butt1" id="bt" style="background:-webkit-linear-gradient(left, #202020 1%, #303030 100%);;color: white;">
+                    <span class="sp">EOS</span>
                     <br>
-                    <span>$9,120.78</span>
+                    <span class="sps"><b>$9,120.78</b></span>
                     <br>
-                    <span class="fa fa-angle-double-up" id="icon"></span> 4.46%
+                    <span class="fa fa-angle-double-up" id="icon"  style="margin-left: -77px;"></span><span> 4.46%</span>
+                    <br>
+                    <img src="images/eos-eos.png" alt="" width="35" height="35" style="border:1px solid black;background: #000;" class="sps2">
                 </div>
                 <div class="butt1" id="bt" style="background:-webkit-linear-gradient(left, #F80000 1%, #F85800 100%);color: white;">
-                    <span>BitCoin cash</span>
+                    <span class="sp">Tezos</span>
                     <br>
-                    <span>$336.62</span>
+                    <span class="sps"><b>$336.62</b></span>
                     <br>
-                    <span class="fa fa-angle-double-up" id="icon"></span> 5.57%
+                    <span class="fa fa-angle-double-up" id="icon" style="margin-left: -67px;"></span><span>5.57%</span>
+                    <br>
+                    <img  height="35" width="35" src="images/tezos-xtz.png" style="border:1px solid red;" class="sps2">
                 </div>
             </div>
             
@@ -170,25 +180,25 @@
         </div>
 
         <div class="dot-container">
-            <span class="dot1" onclick="currentSlide(1)"></span> 
-            <span class="dot1" onclick="currentSlide(2)"></span> 
-            <span class="dot1" onclick="currentSlide(3)"></span> 
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
         </div>
 
         <table>
-            <tr style="color:#245da6;">
-                <th>#</th>
-                <th>NAME<i class="fa fa-angle-up"></i></th>
-                <th>CHANGE<i class="fa fa-angle-up"></i></th>
-                <th>PRICE<i class="fa fa-angle-down"></i></th>
-                <th>24HR CHANGE<i class="fa fa-angle-up"></i></th>
-                <th>GRAPH</th>
-                <th>COINS<i class="fa fa-angle-up"></i></th>
-                <th>MARKET CAP<i class="fa fa-angle-down"></i></th>
+            <tr>
+                <th style="color:#245da6;">#</th>
+                <th style="color:#245da6;">NAME<i class="fa fa-angle-up"></i></th>
+                <th style="color:#245da6;">CHANGE<i class="fa fa-angle-up"></i></th>
+                <th style="color:#245da6;">PRICE<i class="fa fa-angle-down"></i></th>
+                <th style="color:#245da6;">24HR CHANGE<i class="fa fa-angle-up"></i></th>
+                <th style="color:#245da6;">GRAPH</th>
+                <th style="color:#245da6;">COINS<i class="fa fa-angle-up"></i></th>
+                <th style="color:#245da6;">MARKET CAP<i class="fa fa-angle-down"></i></th>
             </tr>
             <tr>
-                <td class="hov">1</td> 
-                <td><span class="fa fa-btc" style="margin:0;padding: 0;color: orangered;font-weight: bold;font-size:20px;"></span>&nbsp;Bitcoin</td>
+                <td style="color: silver;"><span id="hov">1</span></td> 
+                <td style="color:#337ab7;"><span class="fa fa-btc" style="margin:0;padding: 0;color: orangered;font-weight: bold;font-size:20px;"></span>&nbsp;<span id="hov">Bitcoin</span></td>
                 <td class="ch"><span class="fa fa-angle-double-up" id="icon" style="color: green;"></span> 4.46%</td>
                 <td class="b">$9,120.78</td>
                 <td class="mk1 b"><span class="fa fa-angle-double-up" id="icon" style="color:green;"></span> $9,120.78<br><span class="fa fa-angle-double-up" id="icons" style="color:red;"></span> $9,120.78</td>
@@ -197,18 +207,26 @@
                 <td class="mk4 b">$166.5 B</td>
             </tr>
             <tr>
-                <td class="hov">2</td> 
-                <td><span class="fa fa-diamond" style="margin:0;padding: 0;color: black;font-weight: bold;font-size:20px;"></span>&nbsp;Ethereum</td>
+                <td style="color: silver;"><span id="hov">2</span></td> 
+                <td style="color:#337ab7;"><span class="fa fa-diamond" style="margin:0;padding: 0;color: black;font-weight: bold;font-size:20px;"></span>&nbsp;<span id="hov">Ethereum</span></td>
                 <td class="ch"><span class="fa fa-angle-double-up" id="icon" style="color: green;"></span> 3.49%</td>
                 <td class="b">$230.91</td>
                 <td class="mk1 b"><span class="fa fa-angle-double-up" id="icon" style="color:green;"></span> $248.98<br><span class="fa fa-angle-double-up" id="icons" style="color:red;"></span> $9,120.78</td>
                 <td class="mk2 b"><img src="images/graph.jpg" alt="" width="70" height="40"></td>
                 <td class="mk3 b">109.97 M</td>
-                <td class="mk4 b">$25.39 B</td>
+                <td class="mk4 b"><span class="ty">$25.39 B</span>
+                    <span class="span1">
+                        <i style="cursor: pointer;" class="fa fa-star white-bg-fav"></i>
+                        <i style="cursor: pointer;" class="fa fa-camera white-bg-fav"></i>
+                    </span>
+                </td>
+                    <!--<td class="favbutton"><span><a class="fav" data-coin="Ripple " style="color: #515151" data-href="https://cointopper.com/favorite/ripple">
+                        <i style="cursor: pointer;" class="fa fa-star white-bg-fav"></i></a><a style="color:#515151" href="https://cointopper.com/coin/ripple#CoinCard">
+                        <i style="cursor: pointer;" class="fa fa-camera white-bg-fav"></i></a></span></td>-->
             </tr>
             <tr>
-                <td class="hov">3</td> 
-                <td><img src="images/ripple-xrp-new.png" width="30" height="20">&nbsp;Ripple</td>
+                <td style="color: silver;"><span id="hov">3</span></td> 
+                <td style="color: #337ab7;"><img src="images/ripple-xrp-new.png" width="30" height="20">&nbsp;<span id="hov">Ripple</span></td>
                 <td class="ch"><span class="fa fa-angle-double-up" id="icon" style="color: green;"></span> 4.46%</td>
                 <td class="b">$9,120.78</td>
                 <td class="mk1 b"><span class="fa fa-angle-double-up" id="icon" style="color:green;"></span> $9,120.78<br><span class="fa fa-angle-double-up" id="icons" style="color:red;"></span> $9,120.78</td>
@@ -340,12 +358,12 @@
                 <div class="footer-logo"><img src="https://cointopper.com/images/footer_logo.png" alt="logo" title="cointopper"></div>
                 <br>
                 <ul class="footer-links">
-                    <li><a href="#" style="color: black;padding-left:35px;">About</a></li><br>
-                    <li><a href="#" style="padding-left:35px;">Contact</a></li><br>
-                    <li><a href="#" style="padding-left:35px;">Advertise</a> </li><br>
-                    <li><a href="#" style="padding-left:35px;">Hire Experts</a></li><br>
-                    <li><a href="#" style="padding-left:35px;">Terms of Use</a></li><br>
-                    <li><a href="#" style="padding-left:35px;">Privacy Policy</a></li><br> 
+                    <li><a href="#" style="color: black;">About</a></li><br>
+                    <li><a href="#">Contact</a></li><br>
+                    <li><a href="#">Advertise</a> </li><br>
+                    <li><a href="#">Hire Experts</a></li><br>
+                    <li><a href="#">Terms of Use</a></li><br>
+                    <li><a href="#">Privacy Policy</a></li><br> 
                 </ul>
             </div>
         </div>
@@ -526,7 +544,7 @@
         function showSlides(n) {
           var i;
           var slides = document.getElementsByClassName("mySlides");
-          var dots = document.getElementsByClassName("dot1");
+          var dots = document.getElementsByClassName("dot");
           if (n > slides.length) {slideIndex = 1}    
           if (n < 1) {slideIndex = slides.length}
           for (i = 0; i < slides.length; i++) {
@@ -540,6 +558,7 @@
         }
     </script>
     <script>
+
         var slideIndex = 1;
         showSlides(slideIndex);
         
@@ -547,7 +566,7 @@
           showSlides(slideIndex += n);
         }
         
-        function currentSlide(n) {
+        function currentSlides(n) {
           showSlides(slideIndex = n);
         }
         
