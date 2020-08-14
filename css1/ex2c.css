@@ -8,13 +8,14 @@
 nav{
     height: 80px;
     width: 100%;
+    margin: 20px;
+    margin-left: 0;
 }
 .imgs{
     width: 170px;
     height: auto;
-    margin: 10px;
     margin-top: 20px;
-    margin-bottom: 20px;
+    margin-left: 10px;
 }
 nav ul{
     float: right;
@@ -267,14 +268,22 @@ td{
     font-weight: bold;
     font-size:20px;
 }
-td:hover{
+.td1:hover{
     color:silver;
 }
 .span1{
     visibility: hidden;
 }
- .ty .span1:hover{
-    visibility: visible;
+
+#ic1:hover{
+    opacity: 0.4;
+}
+#img{
+    opacity: 0;
+}
+#img:hover{
+    display: inline;
+    opacity: 1;
 }
 #hov:hover{
     color: #003bb2;
