@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Document</title>
-    <link rel="stylesheet" href="css1/ex2c.css">
+    <link rel="stylesheet" href="css/ex2c.css">
 </head>
 <body>
     <nav>
@@ -62,7 +62,7 @@
                     <br>
                     <span class="fa fa-angle-double-up" id="icon" style="margin-left: -77px;"></span><span>4.46%</span>
                     <br>
-                    <img  height="35" width="35" draggable="false" onmousedown="return false" src="images/bitcoin-btc.png" style="border-radius: 100%;border:1px solid orange;background: orange;float:right;margin-top: -20px;color: orange;">
+                    <img  height="35" width="35" draggable="false"  src="images/bitcoin-btc.png" style="border-radius: 100%;border:1px solid orange;background: orange;float:right;margin-top: -20px;color: orange;">
                 </div>
                 <div class="butt1" style="background:-webkit-linear-gradient(left, #505050 1%, #282828 100%);color: white;">
                     <span class="sp">NEM</span>
@@ -71,7 +71,7 @@
                     <br>
                     <span class="fa fa-angle-double-up" id="icon" style="margin-left: -77px";></span><span>0.00%</span>
                     <br>
-                    <img height="35" width="35" draggable="false" onmousedown="return false" src="https://cointopper.com/images/thumb/nem-xem.png" style="border-radius:100%;border:1px solid black;float:right;margin-top: -20px;background: black;">
+                    <img height="35" width="35" draggable="false"  src="https://cointopper.com/images/thumb/nem-xem.png" style="border-radius:100%;border:1px solid black;float:right;margin-top: -20px;background: black;">
                 </div>
                 <div class="butt1" id="bt" style="background:-webkit-linear-gradient(left, #307088 1%, #F0A800 100%);color:white;">
                     <span class="sp">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ethereum</span>
@@ -199,26 +199,32 @@
             <tr>
                 <td style="color: silver;"><span id="hov">1</span></td> 
                 <td style="color:#337ab7;"><span class="fa fa-btc" style="margin:0;padding: 0;color: orangered;font-weight: bold;font-size:20px;"></span>&nbsp;<span id="hov">Bitcoin</span></td>
-                <td class="ch"><span class="fa fa-angle-double-up" id="icon" style="color: green;"></span> 4.46%</td>
-                <td class="b">$9,120.78</td>
-                <td class="mk1 b"><span class="fa fa-angle-double-up" id="icon" style="color:green;"></span> $9,120.78<br><span class="fa fa-angle-double-up" id="icons" style="color:red;"></span> $9,120.78</td>
-                <td class="mk2 b"><img src="images/graph.jpg" alt="" width="70" height="40"></td>
-                <td class="mk3 b">18.25 M</td>
-                <td class="mk4 b">$166.5 B</td>
+                <td class="ch td1"><span class="fa fa-angle-double-up" id="icon" style="color: green;"></span> 4.46%</td>
+                <td class=" td1">$9,120.78</td>
+                <td class="mk1 b td1"><span class="fa fa-angle-double-up" id="icon" style="color:green;"></span> $9,120.78<br><span class="fa fa-angle-double-up" id="icons" style="color:red;"></span> $9,120.78</td>
+                <td class="mk2 b td1"><img src="images/graph.jpg" alt="" width="70" height="40"></td>
+                <td class="mk3 b td1">18.25 M</td>
+                <td class="mk4 b"><span>$166.5 B</span>
+                    <div id="img">
+                        <i style="cursor: pointer;" class="fa fa-star white-bg-fav" ></i>
+                        <i style="cursor: pointer;" class="fa fa-camera white-bg-fav"></i>
+                    </div>
+                </td>
             </tr>
             <tr>
                 <td style="color: silver;"><span id="hov">2</span></td> 
                 <td style="color:#337ab7;"><span class="fa fa-diamond" style="margin:0;padding: 0;color: black;font-weight: bold;font-size:20px;"></span>&nbsp;<span id="hov">Ethereum</span></td>
-                <td class="ch"><span class="fa fa-angle-double-up" id="icon" style="color: green;"></span> 3.49%</td>
-                <td class="b">$230.91</td>
-                <td class="mk1 b"><span class="fa fa-angle-double-up" id="icon" style="color:green;"></span> $248.98<br><span class="fa fa-angle-double-up" id="icons" style="color:red;"></span> $9,120.78</td>
-                <td class="mk2 b"><img src="images/graph.jpg" alt="" width="70" height="40"></td>
-                <td class="mk3 b">109.97 M</td>
-                <td class="mk4 b"><span class="ty">$25.39 B</span>
-                    <span class="span1">
-                        <i style="cursor: pointer;" class="fa fa-star white-bg-fav"></i>
-                        <i style="cursor: pointer;" class="fa fa-camera white-bg-fav"></i>
-                    </span>
+                <td class="ch td1"><span class="fa fa-angle-double-up td1" id="icon" style="color: green;"></span> 3.49%</td>
+                <td class="b td1">$230.91</td>
+                <td class="mk1 b td1"><span class="fa fa-angle-double-up" id="icon" style="color:green;"></span> $248.98<br><span class="fa fa-angle-double-up" id="icons" style="color:red;"></span> $9,120.78</td>
+                <td class="mk2 b td1"><img src="images/graph.jpg" alt="" width="70" height="40"></td>
+                <td class="mk3 b td1">109.97 M</td>
+                <td class="mk4 b">
+                    <span id="ic1"><strong>$25.39 B</strong></span>
+                        <div id="img">
+                            <i style="cursor: pointer;" class="fa fa-star white-bg-fav" ></i>
+                            <i style="cursor: pointer;" class="fa fa-camera white-bg-fav"></i>
+                        </div>
                 </td>
                     <!--<td class="favbutton"><span><a class="fav" data-coin="Ripple " style="color: #515151" data-href="https://cointopper.com/favorite/ripple">
                         <i style="cursor: pointer;" class="fa fa-star white-bg-fav"></i></a><a style="color:#515151" href="https://cointopper.com/coin/ripple#CoinCard">
@@ -227,12 +233,17 @@
             <tr>
                 <td style="color: silver;"><span id="hov">3</span></td> 
                 <td style="color: #337ab7;"><img src="images/ripple-xrp-new.png" width="30" height="20">&nbsp;<span id="hov">Ripple</span></td>
-                <td class="ch"><span class="fa fa-angle-double-up" id="icon" style="color: green;"></span> 4.46%</td>
-                <td class="b">$9,120.78</td>
-                <td class="mk1 b"><span class="fa fa-angle-double-up" id="icon" style="color:green;"></span> $9,120.78<br><span class="fa fa-angle-double-up" id="icons" style="color:red;"></span> $9,120.78</td>
-                <td class="mk2 b"><img src="images/graph.jpg" alt="" width="70" height="40"></td>
-                <td class="mk3 b">18.25 M</td>
-                <td class="mk4 b">$166.5 B</td>
+                <td class="ch td1"><span class="fa fa-angle-double-up" id="icon" style="color: green;"></span> 4.46%</td>
+                <td class="b td1">$9,120.78</td>
+                <td class="mk1 b td1"><span class="fa fa-angle-double-up" id="icon" style="color:green;"></span> $9,120.78<br><span class="fa fa-angle-double-up" id="icons" style="color:red;"></span> $9,120.78</td>
+                <td class="mk2 b td1"><img src="images/graph.jpg" alt="" width="70" height="40"></td>
+                <td class="mk3 b td1">18.25 M</td>
+                <td class="mk4 b"><span>$166.5 B</span>
+                    <div id="img">
+                        <i style="cursor: pointer;" class="fa fa-star white-bg-fav" ></i>
+                        <i style="cursor: pointer;" class="fa fa-camera white-bg-fav"></i>
+                    </div>
+                </td>
             </tr>
         </table>
     </section>
