@@ -652,9 +652,6 @@ footer{
     .form-control{
         width: 190px;
     }
-    .footer-bottom{
-        height:150px;
-    }
 }
 @media (max-width:560px){
     .cardbox{
