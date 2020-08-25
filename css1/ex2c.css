@@ -407,6 +407,7 @@ footer{
 }
 .footer-bottom{
     background: #ccc;
+    height:10px;
 }
 .text-left p{
     font-size:20px;
@@ -652,8 +653,8 @@ footer{
     .form-control{
         width: 190px;
     }
-    .footer-text-bottom{
-        height:100px;
+    .footer-bottom{
+        height:150px;
     }
 }
 @media (max-width:560px){
