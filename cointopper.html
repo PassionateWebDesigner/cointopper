@@ -5,25 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Document</title>
+    <link rel="stylesheet" href="css1/samplenav.css">
     <link rel="stylesheet" href="css1/ex2c.css">
 </head>
 <body>
     <nav>
-        <input type="checkbox" id="check">
-        <label for="check" class="checkbtn">
-            <i class="fa fa-bars"></i>
-        </label>
-        <img src="images/logo.jpg" alt="" class="imgs">
-        <ul>
-            <li><a href="#" class="active">Home</a></li>
-            <li><a href="#">ICO's</a></li>
-            <li><a href="#">Airdrops</a></li>
-            <li><a href="#">News</a></li>
-            <li><a href="#">Guide</a></li>
-            <li><a href="#">Hire Experts</a></li>
-            <li><a href="#">Login</a></li>
-        </ul>
+        <div class="rowh clearfix">
+            <img src="images/logo.jpg" alt="logo" height="45" class="logo">
+            <a href="#" class="mobile-icon" onclick="slideshow()"><i class="fa fa-bars"></i></a>
+            <div class="scrollmenu">
+                <ul class="main-nav" id="check-class">
+                    <li><a href="#" class="home">Home</a></li>
+                    <li><a href="#">ICOs</a></li>
+                    <li><a href="#">Airdrops</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Guides</a></li>
+                    <li><a href="#">Hire Experts</a></li>
+                    <li><a href="#">Login</a></li>
+                </ul>
+            </div>
+        </div>
     </nav>
+    <br><br>
     <section>
         <div class="row1">
             <div class="divs">
@@ -38,11 +41,11 @@
                 <h4>24h volume</h4>
                 <span>$137.7 B</span>
             </div>
-            <div class="divs3">
+            <div class="divs3 mk1">
                 <h4>AltCoin M.cap</h4>
                 <span>$100.5 B</span>
             </div>
-            <div class="divs4">
+            <div class="divs4 mk1">
                 <h4>total M.cap</h4>
                 <span>$277.7 B</span>
             </div>
@@ -55,215 +58,217 @@
         </div>
         <div class="slideshow-container">
             <div class="mySlides">
-                <div class="butt1" style="color: white;">
-                    <span class="sp">BitCoin</span>
-                    <br>
-                    <span class="sps"><b>$9,120.78</b></span>
-                    <br>
-                    <span class="fa fa-angle-double-up" id="icon" style="margin-left: -77px;"></span><span>4.46%</span>
-                    <br>
-                    <img  height="35" width="35" draggable="false"  src="images/bitcoin-btc.png" style="border-radius: 100%;border:1px solid orange;background: orange;float:right;margin-top: -20px;color: orange;">
+                <div class="butt1">
+                    <span id="sp">Bitcoin</span><br>
+                    <span id="sps">$9,180 B</span><br>
+                    &nbsp;<span class="fa fa-angle-double-up" id="icon"></span> <span id="sps2">4.46%</span>
+                    <img src="images/bitcoin-btc.png" alt="" width="28" height="28" id="sps3">
                 </div>
-                <div class="butt1" style="background:-webkit-linear-gradient(left, #505050 1%, #282828 100%);color: white;">
-                    <span class="sp">NEM</span>
-                    <br>
-                    <span class="sps"><b>$0.05432</b></span>
-                    <br>
-                    <span class="fa fa-angle-double-up" id="icon" style="margin-left: -77px";></span><span>0.00%</span>
-                    <br>
-                    <img height="35" width="35" draggable="false"  src="https://cointopper.com/images/thumb/nem-xem.png" style="border-radius:100%;border:1px solid black;float:right;margin-top: -20px;background: black;">
+                <div class="butt2" style="background:-webkit-linear-gradient(left, #505050 1%, #282828 100%) ;">
+                    <span id="sp">Ethereum</span><br>
+                    <span id="sps">$9,180 B</span><br>
+                    &nbsp;<span class="fa fa-angle-double-up" id="icon"></span> <span id="sps2">4.46%</span>
+                    <img src="images/ethereum-eth.png" alt="" width="28" height="28" id="sps3" style="background:grey;border:1px solid grey;border-radius:100%;">
                 </div>
-                <div class="butt1" id="bt" style="background:-webkit-linear-gradient(left, #307088 1%, #F0A800 100%);color:white;">
-                    <span class="sp">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ethereum</span>
-                    <br>
-                    <span class="sps"><b>$3.78888</b></span>
-                    <br>
-                    <span class="fa fa-angle-double-up" id="icon" style="margin-left: -77px;"></span><span>3.39%</span>
-                    <br>
-                    <img src="images/ethereum-eth.png" alt="" width="35" height="35" style="border:1px solid orange;background: orange;" class="sps2">
+                <div class="butt2 mk1" style="background:-webkit-linear-gradient(left, #307088 1%, #F0A800 100%) ;">
+                    <span id="sp">NEM</span><br>
+                    <span id="sps">$9,180 B</span><br>
+                    &nbsp;<span class="fa fa-angle-double-up" id="icon"></span> <span id="sps2">4.46%</span>
+                    <img src="https://cointopper.com/images/thumb/nem-xem.png" alt="" width="28" height="28" id="sps3" style="background: orange;border:1px solid orange;border-radius:100%;">
                 </div>
-                <div class="butt1" id="bt" style="background:-webkit-linear-gradient(left, #202020 1%, #303030 100%);;color: white;">
-                    <span class="sp">EOS</span>
-                    <br>
-                    <span class="sps"><b>$9,120.78</b></span>
-                    <br>
-                    <span class="fa fa-angle-double-up" id="icon"  style="margin-left: -77px;"></span><span> 4.46%</span>
-                    <br>
-                    <img src="images/eos-eos.png" alt="" width="35" height="35" style="border:1px solid black;background: #000;" class="sps2">
+                <div class="butt2 mk1" style="background:-webkit-linear-gradient(left, #0e0e0e 1%, #818181 100%) ;">
+                    <span id="sp">Ripple</span><br>
+                    <span id="sps">$9,180 B</span><br>
+                    &nbsp;<span class="fa fa-angle-double-up" id="icon"></span> <span id="sps2">4.46%</span>
+                    <img src="images/ripple-xrp-new.png" alt="" width="28" height="28" id="sps3" style="background: #b4a2a2;border:1px solid #b4b4b4;border-radius:100%;">
                 </div>
-                <div class="butt1" id="bt" style="background:-webkit-linear-gradient(left, #F80000 1%, #F85800 100%);color: white;">
-                    <span class="sp">Tezos</span>
-                    <br>
-                    <span class="sps"><b>$336.62</b></span>
-                    <br>
-                    <span class="fa fa-angle-double-up" id="icon" style="margin-left: -67px;"></span><span>5.57%</span>
-                    <br>
-                    <img  height="35" width="35" src="images/tezos-xtz.png" style="border:1px solid red;" class="sps2">
+                <div class="butt2 mk1" style="background:-webkit-linear-gradient(left, #B8A028 1%, #B8A030 100%) ;">
+                    <span id="sp">Dodge Coin</span><br>
+                    <span id="sps">$9,180 B</span><br>
+                    &nbsp;<span class="fa fa-angle-double-up" id="icon"></span> <span id="sps2">4.46%</span>
+                    <img src="images/dogecoin-doge.png" alt="" width="28" height="28" id="sps3" style="background: #f3e0b3;border:1px solid #F0A800;border-radius: 100%;">
                 </div>
             </div>
-            
             <div class="mySlides">
-                <div class="butt1" style="color: white;background-color: #3a727f;">
-                    <span>BitCoin</span>
-                    <br>
-                    <span>$9,120.78</span>
-                    <br>
-                    <span class="fa fa-angle-double-up" id="icon"></span> 4.46%
+                <div class="butt1" style="background:-webkit-linear-gradient(left, #B8A028 1%, #B8A030 100%) ;">
+                    <span id="sp">Dodge Coin</span><br>
+                    <span id="sps">$9,180 B</span><br>
+                    &nbsp;<span class="fa fa-angle-double-up" id="icon"></span> <span id="sps2">4.46%</span>
+                    <img src="images/dogecoin-doge.png" alt="" width="28" height="28" id="sps3" style="background: #f3e0b3;border:1px solid #F0A800;border-radius: 100%;">
                 </div>
-                <div class="butt1" style="background-color: #ac166f;color: white;">
-                    <span>BitCoin</span>
-                    <br>
-                    <span>$9,120.78</span>
-                    <br>
-                    <span class="fa fa-angle-double-up" id="icon"></span> 4.46%
+                <div class="butt2" style="background:-webkit-linear-gradient(left, #20C0F8 1%, #7890C8 100%);border:1px solid skyblue;">
+                    <span id="sp">Chain link</span><br>
+                    <span id="sps">$9,180 B</span><br>
+                    &nbsp;<span class="fa fa-angle-double-up" id="icon"></span> <span id="sps2">4.46%</span>
+                    <img src="https://cointopper.com/images/thumb/chainlink-link.png" alt="" width="28" height="28" id="sps3" style="background:skyblue;border:1px solid skyblue ;border-radius: 100%;">
                 </div>
-                <div class="butt1" id="bt" style="background-color:#6A5ACD;color:white">
-                    <span>BitCoin</span>
-                    <br>
-                    <span>$9,120.78</span>
-                    <br>
-                    <span class="fa fa-angle-double-up" id="icon"></span> 4.46%
+                <div class="butt2 mk1" style="background:-webkit-linear-gradient(left, #20C0F8 1%, #7890C8 100%);border:1px solid skyblue;">
+                    <span id="sp">Chain link</span><br>
+                    <span id="sps">$9,180 B</span><br>
+                    &nbsp;<span class="fa fa-angle-double-up" id="icon"></span> <span id="sps2">4.46%</span>
+                    <img src="https://cointopper.com/images/thumb/chainlink-link.png" alt="" width="28" height="28" id="sps3" style="background:skyblue;border:1px solid skyblue ;border-radius: 100%;">
                 </div>
-                <div class="butt1" id="bt" style="background-color: purple;color: white;">
-                    <span>BitCoin</span>
-                    <br>
-                    <span>$9,120.78</span>
-                    <br>
-                    <span class="fa fa-angle-double-up" id="icon"></span> 4.46%
+                <div class="butt2 mk1" style="background:-webkit-linear-gradient(left, #20C0F8 1%, #7890C8 100%);border:1px solid skyblue;">
+                    <span id="sp">Chain link</span><br>
+                    <span id="sps" >$9,180 B</span><br>
+                    &nbsp;<span class="fa fa-angle-double-up" id="icon"></span> <span id="sps2">4.46%</span>
+                    <img src="https://cointopper.com/images/thumb/chainlink-link.png" alt="" width="28" height="28" id="sps3" style="background:skyblue;border:1px solid skyblue ;border-radius: 100%;">
                 </div>
-                <div class="butt1" id="bt" style="background-color: orangered;color: white;">
-                    <span>BitCoin</span>
-                    <br>
-                    <span>$9,120.78</span>
-                    <br>
-                    <span class="fa fa-angle-double-up" id="icon"></span> 4.46%
+                <div class="butt2 mk1" style="background:-webkit-linear-gradient(left, #20C0F8 1%, #7890C8 100%);border:1px solid skyblue;">
+                    <span id="sp">Chain link</span><br>
+                    <span id="sps">$9,180 B</span><br>
+                    &nbsp;<span class="fa fa-angle-double-up" id="icon"></span> <span id="sps2">4.46%</span>
+                    <img src="https://cointopper.com/images/thumb/chainlink-link.png" alt="" width="28" height="28" id="sps3" style="background:skyblue;border:1px solid skyblue ;border-radius: 100%;">
                 </div>
             </div>
-            
             <div class="mySlides">
-                <div class="butt1" style="color: white;background-color: black;">
-                    <span>BitCoin</span>
-                    <br>
-                    <span>$9,120.78</span>
-                    <br>
-                    <span class="fa fa-angle-double-up" id="icon" style="text-align: left;"></span> 4.46%
+                <div class="butt1" style="background:-webkit-linear-gradient(left, #20C0F8 1%, #7890C8 100%);border:1px solid skyblue;">
+                    <span id="sp">Chain link</span><br>
+                    <span id="sps">$9,180 B</span><br>
+                    &nbsp;<span class="fa fa-angle-double-up" id="icon"></span> <span id="sps2">4.46%</span>
+                    <img src="https://cointopper.com/images/thumb/chainlink-link.png" alt="" width="28" height="28" id="sps3" style="background:skyblue;border:1px solid skyblue ;border-radius: 100%;">
                 </div>
-                <div class="butt1" style="background-color: goldenrod;color: white;">
-                    <span>BitCoin</span>
-                    <br>
-                    <span>$9,120.78</span>
-                    <br>
-                    <span class="fa fa-angle-double-up" id="icon"></span> 4.46%
+                <div class="butt2" style="background:-webkit-linear-gradient(left, #20C0F8 1%, #7890C8 100%);border:1px solid skyblue;">
+                    <span id="sp">Chain link</span><br>
+                    <span id="sps">$9,180 B</span><br>
+                    &nbsp;<span class="fa fa-angle-double-up" id="icon"></span> <span id="sps2">4.46%</span>
+                    <img src="https://cointopper.com/images/thumb/chainlink-link.png" alt="" width="28" height="28" id="sps3" style="background:skyblue;border:1px solid skyblue ;border-radius: 100%;">
                 </div>
-                <div class="butt1" id="bt" style="background-color: maroon;color:white">
-                    <span>BitCoin</span>
-                    <br>
-                    <span>$9,120.78</span>
-                    <br>
-                    <span class="fa fa-angle-double-up" id="icon"></span> 4.46%
+                <div class="butt2 mk1" style="background:-webkit-linear-gradient(left, #20C0F8 1%, #7890C8 100%);border:1px solid skyblue;">
+                    <span id="sp">Chain link</span><br>
+                    <span id="sps">$9,180 B</span><br>
+                    &nbsp;<span class="fa fa-angle-double-up" id="icon"></span> <span id="sps2">4.46%</span>
+                    <img src="https://cointopper.com/images/thumb/chainlink-link.png" alt="" width="28" height="28" id="sps3" style="background:skyblue;border:1px solid skyblue ;border-radius: 100%;">
                 </div>
-                <div class="butt1" id="bt" style="background-color: fuchsia;color: white;">
-                    <span>BitCoin</span>
-                    <br>
-                    <span>$9,120.78</span>
-                    <br>
-                    <span class="fa fa-angle-double-up" id="icon"></span> 4.46%
+                <div class="butt2 mk1" style="background:-webkit-linear-gradient(left, #20C0F8 1%, #7890C8 100%);border:1px solid skyblue;">
+                    <span id="sp">Chain link</span><br>
+                    <span id="sps">$9,180 B</span><br>
+                    &nbsp;<span class="fa fa-angle-double-up" id="icon"></span> <span id="sps2">4.46%</span>
+                    <img src="https://cointopper.com/images/thumb/chainlink-link.png" alt="" width="28" height="28" id="sps3" style="background:skyblue;border:1px solid skyblue ;border-radius: 100%;">
                 </div>
-                <div class="butt1" id="bt" style="background-color:navy;color: white;">
-                    <span>BitCoin</span>
-                    <br>
-                    <span>$9,120.78</span>
-                    <br>
-                    <span class="fa fa-angle-double-up" id="icon"></span> 4.46%
+                <div class="butt2 mk1" style="background:-webkit-linear-gradient(left, #20C0F8 1%, #7890C8 100%);border:1px solid skyblue;">
+                    <span id="sp">Chain link</span><br>
+                    <span id="sps">$9,180 B</span><br>
+                    &nbsp;<span class="fa fa-angle-double-up" id="icon"></span> <span id="sps2">4.46%</span>
+                    <img src="https://cointopper.com/images/thumb/chainlink-link.png" alt="" width="28" height="28" id="sps3" style="background:skyblue;border:1px solid skyblue ;border-radius: 100%;">
                 </div>
             </div>
         </div>
-
         <div class="dot-container">
             <span class="dot" onclick="currentSlide(1)"></span> 
             <span class="dot" onclick="currentSlide(2)"></span> 
             <span class="dot" onclick="currentSlide(3)"></span> 
         </div>
-
-        <table>
-            <tr>
-                <th style="color:#245da6;">#</th>
-                <th style="color:#245da6;">NAME<i class="fa fa-angle-up"></i></th>
-                <th style="color:#245da6;">CHANGE<i class="fa fa-angle-up"></i></th>
-                <th style="color:#245da6;">PRICE<i class="fa fa-angle-down"></i></th>
-                <th style="color:#245da6;">24HR CHANGE<i class="fa fa-angle-up"></i></th>
-                <th style="color:#245da6;">GRAPH</th>
-                <th style="color:#245da6;">COINS<i class="fa fa-angle-up"></i></th>
-                <th style="color:#245da6;">MARKET CAP<i class="fa fa-angle-down"></i></th>
-            </tr>
-            <tr>
-                <td style="color: silver;"><span id="hov">1</span></td> 
-                <td style="color:#337ab7;"><span class="fa fa-btc" style="margin:0;padding: 0;color: orangered;font-weight: bold;font-size:20px;"></span>&nbsp;<span id="hov">Bitcoin</span></td>
-                <td class="ch td1"><span class="fa fa-angle-double-up" id="icon" style="color: green;"></span> 4.46%</td>
-                <td class=" td1">$9,120.78</td>
-                <td class="mk1 b td1"><span class="fa fa-angle-double-up" id="icon" style="color:green;"></span> $9,120.78<br><span class="fa fa-angle-double-up" id="icons" style="color:red;"></span> $9,120.78</td>
-                <td class="mk2 b td1"><img src="images/graph.jpg" alt="" width="70" height="40"></td>
-                <td class="mk3 b td1">18.25 M</td>
-                <td class="mk4 b"><span>$166.5 B</span>
-                    <div id="img">
-                        <i style="cursor: pointer;" class="fa fa-star white-bg-fav" ></i>
-                        <i style="cursor: pointer;" class="fa fa-camera white-bg-fav"></i>
+        <div class="tab">
+            <div class="row">
+                <div class="top">
+                    <h3>Cryptocurrencies</h3>
+                </div>
+                <div class="forms">
+                    <div class="input-icons">
+                        <i class="fa fa-search icon"></i>
+                        <input  class="input-field" type="text" placeholder=" Search coins" style="font-size:15px;font-weight:bold;">
+                        <a href="#" style="text-decoration: none;padding:10px;background-color:gainsboro;color:rgba(0, 0, 0, 0.575);border:1px solid gainsboro;border-radius:10px;font-size:15px;font-weight: bold;">USD</a>
                     </div>
-                </td>
-            </tr>
-            <tr>
-                <td style="color: silver;"><span id="hov">2</span></td> 
-                <td style="color:#337ab7;"><span class="fa fa-diamond" style="margin:0;padding: 0;color: black;font-weight: bold;font-size:20px;"></span>&nbsp;<span id="hov">Ethereum</span></td>
-                <td class="ch td1"><span class="fa fa-angle-double-up td1" id="icon" style="color: green;"></span> 3.49%</td>
-                <td class="b td1">$230.91</td>
-                <td class="mk1 b td1"><span class="fa fa-angle-double-up" id="icon" style="color:green;"></span> $248.98<br><span class="fa fa-angle-double-up" id="icons" style="color:red;"></span> $9,120.78</td>
-                <td class="mk2 b td1"><img src="images/graph.jpg" alt="" width="70" height="40"></td>
-                <td class="mk3 b td1">109.97 M</td>
-                <td class="mk4 b">
-                    <span id="ic1"><strong>$25.39 B</strong></span>
-                        <div id="img">
-                            <i style="cursor: pointer;" class="fa fa-star white-bg-fav" ></i>
-                            <i style="cursor: pointer;" class="fa fa-camera white-bg-fav"></i>
+                </div>
+            </div>
+            <table>
+                <tr>
+                    <th>#</th>
+                    <th>NAME<span class="fa fa-angle-up"></span></th>
+                    <th>CHANGE <span class="fa fa-angle-up"></span></th>
+                    <th>PRICE <span class="fa fa-angle-down"></span></th>
+                    <th class="mk1">24 HR CHANGE <span class="fa fa-angle-up"></span></th>
+                    <th class="mk1">GRAPH</th>
+                    <th class="mk1">COINS <span class="fa fa-angle-up"></span></th>
+                    <th class="mk1">MARKETCAP</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>
+                        <img src="images/bitcoin-btc.png" alt="" width="18" class="imj">
+                        <span>Bitcoin</span>
+                        <span class="dir">BTC</span>
+                    </td>
+                    <td style="color: green;"><span class="fa fa-angle-double-up" id="icon" style="color: green;"></span>4.46%</td>
+                    <td>
+                        <span>9,120.8 B</span>
+                        <span class="fa fa-btc dir">1.00000</span>
+                    </td>
+                    <td class="mk1 b td1"><span class="fa fa-angle-double-up" id="icon" style="color:green;"></span> $9,120.78<br><span class="fa fa-angle-double-up" id="icons" style="color:red;"></span> $9,120.78</td>
+                    <td class="mk1"><img src="images/graph.jpg" alt="" width="150"></td>
+                    <td class="mk1">18.25 M</td>
+                    <td class="mk1" id="bts">
+                        <div class="container rows">
+                            165.68 B 
+                            <div class="overlay">
+                                <div class="texts"><i class="fa fa-star"></i> <i class="fa fa-camera"></i></div>
+                            </div>
                         </div>
-                </td>
-                    <!--<td class="favbutton"><span><a class="fav" data-coin="Ripple " style="color: #515151" data-href="https://cointopper.com/favorite/ripple">
-                        <i style="cursor: pointer;" class="fa fa-star white-bg-fav"></i></a><a style="color:#515151" href="https://cointopper.com/coin/ripple#CoinCard">
-                        <i style="cursor: pointer;" class="fa fa-camera white-bg-fav"></i></a></span></td>-->
-            </tr>
-            <tr>
-                <td style="color: silver;"><span id="hov">3</span></td> 
-                <td style="color: #337ab7;"><img src="images/ripple-xrp-new.png" width="30" height="20">&nbsp;<span id="hov">Ripple</span></td>
-                <td class="ch td1"><span class="fa fa-angle-double-up" id="icon" style="color: green;"></span> 4.46%</td>
-                <td class="b td1">$9,120.78</td>
-                <td class="mk1 b td1"><span class="fa fa-angle-double-up" id="icon" style="color:green;"></span> $9,120.78<br><span class="fa fa-angle-double-up" id="icons" style="color:red;"></span> $9,120.78</td>
-                <td class="mk2 b td1"><img src="images/graph.jpg" alt="" width="70" height="40"></td>
-                <td class="mk3 b td1">18.25 M</td>
-                <td class="mk4 b"><span>$166.5 B</span>
-                    <div id="img">
-                        <i style="cursor: pointer;" class="fa fa-star white-bg-fav" ></i>
-                        <i style="cursor: pointer;" class="fa fa-camera white-bg-fav"></i>
-                    </div>
-                </td>
-            </tr>
-        </table>
+                    </td>
+                </tr>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>
+                        <img src="images/ethereum-eth.png" alt="" width="18" class="imj">
+                        <span>Ethereum</span>
+                        <span class="dir">ETH</span>
+                    </td>
+                    <td style="color: green;"><span class="fa fa-angle-double-up" id="icon" style="color: green;"></span>4.46%</td>
+                    <td>
+                        <span>9,120.8 B</span>
+                        <span class="fa fa-btc dir">1.00000</span>
+                    </td>
+                    <td class="mk1 b td1"><span class="fa fa-angle-double-up" id="icon" style="color:green;"></span> $9,120.78<br><span class="fa fa-angle-double-up" id="icons" style="color:red;"></span> $9,120.78</td>
+                    <td class="mk1"><img src="images/graph.jpg" alt="" width="150"></td>
+                    <td class="mk1">109.25 M</td>
+                    <td class="mk1" id="bts">
+                        <div class="container rows">
+                            165.68 B 
+                            <div class="overlay">
+                                <div class="texts"><i class="fa fa-star"></i> <i class="fa fa-camera"></i></div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>
+                        <img src="images/ripple-xrp-new.png" alt="" width="18" class="imj">
+                        <span>Ripple</span>
+                        <span class="dir">XRP</span>
+                    </td>
+                    <td style="color: green;"><span class="fa fa-angle-double-up" id="icon" style="color: green;"></span>4.46%</td>
+                    <td>
+                        <span>9,120.8 B</span>
+                        <span class="fa fa-btc dir">1.00000</span>
+                    </td>
+                    <td class="mk1 b td1"><span class="fa fa-angle-double-up" id="icon" style="color:green;"></span> $9,120.78<br><span class="fa fa-angle-double-up" id="icons" style="color:red;"></span> $9,120.78</td>
+                    <td class="mk1"><img src="images/graph.jpg" alt="" width="150"></td>
+                    <td class="mk1">156.9M</td>
+                    <td class="mk1" id="bts">
+                        <div class="container rows">
+                            165.68 B 
+                            <div class="overlay">
+                                <div class="texts"><i class="fa fa-star"></i> <i class="fa fa-camera"></i></div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
     </section>
-    <br>
-
-    <div class="buttons">
-        <a href="#"><span class="fa fa-angle-double-left k"></span>Previous</a>
-        <a href="#">next<span class="fa fa-angle-double-right k"></span></a>
-    </div>
-
-    <br>
-    <div class="tops">
+    <div class="top">
         <h3>NEWS</h3>
-        <a href="#" style="color: white;">View All</a>
+        <a href="#" style="text-decoration:none;color: white;">View All</a>
     </div>
 
     <section>
         <div class="slide-show-containers">
-            <div class="mySlides1">
-                <div class="cardbox" style="float:left;">
+            <div class="mySlide">
+                <div class="cardbox mk1" style="float:left;" id="cb">
                     <div>
                         <img src="images/us-federal-court-cryptocurrencies-to-be-treated-as-commodities-15387446239784.jpg" alt="" class="img1">
                     </div>
@@ -273,7 +278,7 @@
                         <span style="float: right;color: silver;font-size:20px;">October 03,2018</span>
                     </div>
                 </div>
-                <div class="cardbox" id="bt">
+                <div class="cardbox" id="cb1">
                     <div>
                         <img src="images/new-google-update-challenges-cryptojackers-15385526567561.jpg" alt="" class="img1">
                     </div>
@@ -282,7 +287,7 @@
                         <span style="float: right;color: silver;font-size:20px;margin-top: 5px;">October 03,2018</span>
                     </div>
                 </div>
-                <div class="cardbox" id="bt" style="float:right; margin-top: -420px;margin-right: 10px;">
+                <div class="cardbox mk1"  style="float:right; margin-top: -420px;margin-right: 10px;">
                     <div>
                         <img src="images/xrp-is-better-than-btc-says-brad-garlinghouse-the-ceo-of-ripple-labs-15385969066753 (1).jpg" alt="" class="img1">
                     </div>
@@ -293,8 +298,8 @@
                 </div>
             </div>
     
-            <div class="mySlides1">
-                <div class="cardbox" style="float: left;">
+            <div class="mySlide">
+                <div class="cardbox mk1" style="float:left;" id="cb">
                     <div>
                         <img src="images/xrp-is-better-than-btc-says-brad-garlinghouse-the-ceo-of-ripple-labs-15385969066753 (1).jpg" alt="" class="img1">
                     </div>
@@ -312,7 +317,7 @@
                         <span style="float: right;color: silver;font-size:20px;">October 03,2018</span>
                     </div>
                 </div>
-                <div class="cardbox" id="bt" style="float: right;margin-top: -420px;">
+                <div class="cardbox mk1" id="bt" style="float: right;margin-top: -420px;">
                     <div>
                         <img src="images/coinbase-gets-an-investment-boost-of-500-million-from-tiger-global-valuation-increases-to-8-billion-15385981723678 (1).png" alt="" class="img1">
                     </div>
@@ -323,8 +328,8 @@
                 </div>
             </div>
     
-            <div class="mySlides1">
-                <div class="cardbox"  style="float:left;">
+            <div class="mySlide">
+                <div class="cardbox mk1"  style="float:left;" id="cb">
                     <div>
                         <img src="images/coinbase-gets-an-investment-boost-of-500-million-from-tiger-global-valuation-increases-to-8-billion-15385981723678 (1).png" alt="" class="img1">
                     </div>
@@ -342,7 +347,7 @@
                         <span style="float: right;color: silver;font-size:20px;">October 03,2018</span>
                     </div>
                 </div>
-                <div class="cardbox" id="bt" style="float:right;margin-top: -420px;">
+                <div class="cardbox mk1" id="bt" style="float:right;margin-top: -420px;">
                     <div>
                         <img src="images/us-federal-court-cryptocurrencies-to-be-treated-as-commodities-15387446239784.jpg" alt="" class="img1">
                     </div>
@@ -354,22 +359,18 @@
             </div>
         </div>    
     </section>
-
-
     <div class="dot-container1">
-        <span class="dot" onclick="currentSlide(1)"></span> 
-        <span class="dot" onclick="currentSlide(2)"></span> 
-        <span class="dot" onclick="currentSlide(3)"></span> 
+        <span class="dots1" onclick="currentSlid(1)"></span> 
+        <span class="dots1" onclick="currentSlid(2)"></span> 
+        <span class="dots1" onclick="currentSlid(3)"></span> 
     </div>
-
-
     <footer>
         <div class="flex-container">
             <div class="row">
-                <div class="footer-logo"><img src="https://cointopper.com/images/footer_logo.png" alt="logo" title="cointopper"></div>
+                <div class="footer-logo"><img src="https://cointopper.com/images/footer_logo.png" alt="logo" class="cointopper"></div>
                 <br>
-                <ul class="footer-links">
-                    <li><a href="#" style="color: black;">About</a></li><br>
+                <ul class="footer-links" id="ft1">
+                    <li><a href="#">About</a></li><br>
                     <li><a href="#">Contact</a></li><br>
                     <li><a href="#">Advertise</a> </li><br>
                     <li><a href="#">Hire Experts</a></li><br>
@@ -378,224 +379,195 @@
                 </ul>
             </div>
         </div>
-        <div class="rows">
+        <div class="rows" id="ft2">
             <h4 class="footer-link-title">Cryptocurrency</h4><br>
-            <ul class="footer-links">
+            <ul class="footer-links" id="ft3">
                 <li><a href="#">Bitcoin </a></li><br>
                 <li><a href="#">Ethereum </a></li><br>
                 <li><a href="#">Ripple </a></li><br>
                 <li><a href="#">Bitcoin Cash </a></li><br>
                 <li><a href="#">Tether </a></li><br>
-                <li><a href="#" style="color: black;font-weight: bold;">Submit Coin</a></li><br>
-                <br>
-                </ul>
-            </div>
-            <div class="rows1">
-                <h4 class="footer-link-title">ICOs</h4>
-                <br>
-                <ul class="footer-links">
-                    <li><a href="#">ACA Network</a></li>
-                    <br>
-                    <li><a href="#">AgroTechFarm</a></li><br>
-                    <li><a href="#">CRYSTALS</a></li><br>
-                    <li><a href="#">Coin Analyst</a></li><br>
-                    <li><a href="#">INGOT COIN</a></li><br>
-                    <li><a href="#" style="color: black;font-weight: bold;">Submit ICO</a></li><br><br>
-                </ul>
-            </div>
-            <div class="rows2">
-                <h4 class="footer-link-title">Airdrops</h4>
-                <br>
-                 <ul class="footer-links">
-                     <li><a href="#">Tachain</a></li><br>
-                     <li><a href="#">imusify</a></li><br>
-                     <li><a href="#">Bidooh</a></li><br>
-                     <li><a href="#">Spiking</a></li><br>
-                     <li><a href="#">Efforce</a></li><br>
-                     <li><a href="#" style="color: black;font-weight: bold;">Submit Airdrop</a></li><br><br>
-                 </ul>
-            </div>
-
-            <div class="row">
-                <div class="footer-row">
-                    <div class="footer-newsletter">
-                        <h4 class="footer-link-title" style="font-size:17px;padding-left:40px;">Newsletter</h4>
-    
-                        <form> 
-                          <div class="form-inline text-left">
-                            <div class="input-group">
-                                <input placeholder="Your Email" class="form-control" name="subscribe_email" type="email">                            
-                                <span class="input-group-btn">
-                                    <button type="submit"><i class="fa fa-arrow-right" aria-hidden="true"></i></button>
-                                </span>
-                            </div>
-                            <br>
-                          </div>
-                        </form>              
-                     </div>
-                </div>
-                <div class="rows4">
-                    <div class="row">
-                        <h4 class="footer-link-title" style="font-size: 17px;">Download</h4>
-                    </div>
-                    <div class="footer-app-icon">
-                        
-                        <a href="https://play.google.com/store/apps/details?id=com.cointopper.coinlist" target="_blank"><img style="max-height: 50px; height: 46px !important;" height="50px" width="150px" class="footer-android" src="https://cointopper.com/images/android_app_icon.png"></a>
-                        
-                    </div>
-                </div>
-                <div class="rows5">
-                    <div class="row">
-                        <h4 class="footer-link-title">&nbsp;</h4>
-                    </div>
-                    <div class="footer-app-icons">
-                        <a href="#"><img style="max-height: 50px; height: 46px !important;" width="150px" height="50px" class="footer-ios" src="https://cointopper.com/images/ios_app_icon.png"></a>
-                    </div>
-                </div>
-            </div>
-            <div class="rows6">
-                    <div>
-                        <h4 class="footer-link-title">Crypto news &amp; updates</h4>  
-                    </div>
-                    <br><br>
-                    <div class="row">
-                        <div>
-                            <div class="row">
-                                <a href="https://cointopper.com/news/us-federal-court-cryptocurrencies-to-be-treated-as-commodities">
-                                <div>
-                                    <img src="https://cointopper.com/uploads/topics/us-federal-court-cryptocurrencies-to-be-treated-as-commodities-15387446239784.jpg" style="width: 100px;height: 50px;">
-    
-                                </div>
-                                <div class="texts">
-                                    <p>&nbsp;&nbsp;US Federal Court: Cryptocurrencies to be treated as commodit...</p>
-                                    <p class="footer-news-date">&nbsp;&nbsp;October 05, 2018</p>
-                                </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="row">
-                                <a href="https://cointopper.com/news/coinbase-gets-an-investment-boost-of-500-million-from-tiger-global-valuation-increases-to-8-billion">
-                                <div>
-                                    <br>
-                                    <img src="https://cointopper.com/uploads/topics/coinbase-gets-an-investment-boost-of-500-million-from-tiger-global-valuation-increases-to-8-billion-15385981723678.png" style="width: 100px;height: 50px;">
-                                </div>
-                                <div class="texts">
-                                    <p>&nbsp;&nbsp;Coinbase Gets an Investment Boost of $500 Million from Tiger...</p>
-                                    <p class="footer-news-date">&nbsp;&nbsp;October 03, 2018</p>
-                                </div>
-                                </a>
-                            </div>
-                        </div>
-                        <br><br>
-                        <div>
-                            <div class="row">
-                                <a href="https://cointopper.com/news/finally-ripples-xrapid-goes-live">
-                                <div style="margin-top: -30px;">
-                                    <img src="https://cointopper.com/uploads/topics/finally-ripples-xrapid-goes-live-15385976068960.jpg" style="width: 100px;height: 50px;">
-                                </div>
-                                <div class="texts">
-                                    <p>&nbsp;&nbsp;Finally, Ripple's xRapid Goes Live</p>
-                                    <p class="footer-news-date">&nbsp;&nbsp;October 03, 2018</p>
-                                </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="row">
-                                <a href="https://cointopper.com/news/xrp-is-better-than-btc-says-brad-garlinghouse-the-ceo-of-ripple-labs">
-                                <div>
-                                    <br>
-                                    <img src="https://cointopper.com/uploads/topics/xrp-is-better-than-btc-says-brad-garlinghouse-the-ceo-of-ripple-labs-15385969066753.jpg" style="width: 100px;height: 50px;">
-                                </div>
-                                <div class="texts">
-                                    <p>&nbsp;&nbsp;XRP is Better Than BTC, says Brad Garlinghouse, the CEO of R...</p>
-                                    <p class="footer-news-date">&nbsp;&nbsp;October 03, 2018</p>
-                                </div>
-                                </a>
-                            </div>
-                        </div>
-                </div>
-            </div>
+                <li><a href="#" style="color: black;font-weight: bold;">Submit Coin</a></li>
+            </ul>
         </div>
-        <br><br><br>
-        <div class="footer-bottom">
-            <div class="row">
-                <div class="footer-text-bottom">
-                    <div class="row">
-                        <span class="text-left" style="padding-left: 30px;"><p>© Copyright 2018. All Rights Reserved.</p></span>
-                        <span class="text-center"><p>Made with <i class="fa fa-heart" aria-hidden="true" style="color:red;"></i> for the Decentralized World</p></span>
-                        <span class="text-right">
-                            <p><a href="https://www.facebook.com/CoinTopper" target="_blank"><i class="fa fa-facebook fb"></i></a>
-                            &nbsp;&nbsp;<a href="https://plus.google.com/+CoinTopper" target="_blank"><i class="fa fa-google-plus gp"></i></a>
-                            &nbsp;&nbsp;<a href="https://twitter.com/CoinTopper" target="_blank"><i class="fa fa-twitter twitter"></i></a>
-                            &nbsp;&nbsp;<a href="https://www.instagram.com/cointopper/" target="_blank"><i class="fa fa-instagram insta"></i></a>
-                            &nbsp;&nbsp;<a href="https://t.me/cointopper" target="_blank"><i class="fa fa-telegram tel"></i></a>
-                            &nbsp;&nbsp;<a href="https://www.youtube.com/channel/UCjfel2DFyKFBwcWZ9wfyLUg" target="_blank"><i class="fa fa-youtube-play youtube"></i></a></p>
-                        </span>
+        <div class="rows1" id="ft4">
+            <h4 class="footer-link-title">ICOs</h4>
+            <br>
+            <ul class="footer-links" id="ft3">
+                <li><a href="#">ACA Network</a></li>
+                <br>
+                <li><a href="#">AgroTechFarm</a></li><br>
+                <li><a href="#">CRYSTALS</a></li><br>
+                <li><a href="#">Coin Analyst</a></li><br>
+                <li><a href="#">INGOT COIN</a></li><br>
+                <li><a href="#" style="color: black;font-weight: bold;">Submit ICO</a></li><br><br>
+            </ul>
+        </div>
+        <div class="rows2" id="ft5">
+            <h4 class="footer-link-title" id="air">Airdrops</h4>
+            <br>
+            <ul class="footer-links mk1" id="ft3">
+                 <li><a href="#">Tachain</a></li><br>
+                 <li><a href="#">imusify</a></li><br>
+                 <li><a href="#">Bidooh</a></li><br>
+                 <li><a href="#">Spiking</a></li><br>
+                 <li><a href="#">Efforce</a></li><br>
+                 <li><a href="#" style="color: black;font-weight: bold;">Submit Airdrop</a></li><br><br>
+            </ul>
+        </div>
+        <div class="row">
+            <div class="footer-row">
+                <div class="footer-newsletter">
+                    <h4 class="footer-link-title" id="new">Newsletter</h4>
+
+                    <form> 
+                      <div class="form-inline">
+                        <div class="input-group">
+                            <input placeholder="Your Email" class="form-control"  type="email">                            
+                            <span class="input-group-btn">
+                                <button type="submit" class="btn"><i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+                            </span>
+                        </div>
                         <br>
-                    </div>
-                </div>    
+                      </div>
+                    </form>              
+                 </div>
             </div>
         </div>
+        <div class="rows4">
+            <div class="row">
+                <h4 class="footer-link-title" style="font-size: 17px;">Download</h4>
+            </div>
+            <div class="footer-app-icon">
+                
+                <a href="#" ><img style="max-height: 50px; height: 46px !important;" height="50px" width="150px" class="footer-android" src="https://cointopper.com/images/android_app_icon.png"></a>
+                <a href="#"><img style="max-height: 50px; height: 46px !important;" width="150px" height="50px" class="footer-ios" src="https://cointopper.com/images/ios_app_icon.png"></a>
+                
+            </div>
+        </div>
+        <div class="rows6">
+            <div>
+                <h4 class="footer-link-title">Crypto news &amp; updates</h4>  
+            </div>
+            <br><br>
+            <div class="row">
+                <div class="row">
+                    <div>
+                        <img src="images/us-federal-court-cryptocurrencies-to-be-treated-as-commodities-15387446239784 (1).jpg" style="width: 100px;height: 50px;">
+                    </div>
+                    <div class="footer-text">
+                        <p>US Federal Court: Cryptocurrencies to be treated as commodit...</p>
+                        <p class="footer-date">&nbsp;&nbsp;October 05, 2018</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="row">
+                        <div>
+                            <br>
+                            <img src="images/coinbase-gets-an-investment-boost-of-500-million-from-tiger-global-valuation-increases-to-8-billion-15385981723678 (1).png" style="width: 100px;height: 50px;">
+                        </div>
+                        <div class="footer-text">
+                            <p>Coinbase Gets an Investment Boost of $500 Million from Tiger...</p>
+                            <p class="footer-date">October 03, 2018</p>
+                        </div>
+                        </a>
+                    </div>
+                </div>
+                <br><br>
+                <div>
+                    <div class="row">
+                        <div style="margin-top: -30px;">
+                            <img src="images/finally-ripples-xrapid-goes-live-15385976068960.jpg" style="width: 100px;height: 50px;">
+                        </div>
+                        <div class="footer-text">
+                            <p>Finally, Ripple's xRapid Goes Live</p>
+                            <p class="footer-date">October 03, 2018</p>
+                        </div>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <div class="row">
+                        <div>
+                            <br>
+                            <img src="images/xrp-is-better-than-btc-says-brad-garlinghouse-the-ceo-of-ripple-labs-15385969066753 (1).jpg" style="width: 100px;height: 50px;">
+                        </div>
+                        <div class="footer-text">
+                            <p>&nbsp;&nbsp;XRP is Better Than BTC, says Brad Garlinghouse, the CEO of R...</p>
+                            <p class="footer-date">October 03, 2018</p>
+                        </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-text-bottom">
+            <div class="row">
+                <span><p class="copy">© Copyright 2018. All Rights Reserved.</p></span>
+                <span><p class="hight">Made with <i class="fa fa-heart" aria-hidden="true" style="color:red;"></i> for the Decentralized World</p></span>
+                <span class="socialicons">
+                    <br>
+                <p><a href="https://www.facebook.com/CoinTopper" target="_blank"><i class="fa fa-facebook fb"></i></a>
+                &nbsp;&nbsp;<a href="https://plus.google.com/+CoinTopper" target="_blank"><i class="fa fa-google-plus gp"></i></a>
+                &nbsp;&nbsp;<a href="https://twitter.com/CoinTopper" target="_blank"><i class="fa fa-twitter twitter"></i></a>
+                &nbsp;&nbsp;<a href="https://www.instagram.com/cointopper/" target="_blank"><i class="fa fa-instagram insta"></i></a>
+                &nbsp;&nbsp;<a href="https://t.me/cointopper" target="_blank"><i class="fa fa-telegram tel"></i></a>
+                &nbsp;&nbsp;<a href="https://www.youtube.com/channel/UCjfel2DFyKFBwcWZ9wfyLUg" target="_blank"><i class="fa fa-youtube-play youtube"></i></a></p>
+                </span>
+                <br>
+            </div>
+        </div>   
     </footer>
-      
     <script>
-        var slideIndex = 1;
-        showSlides(slideIndex);
-        
-        function plusSlides(n) {
-          showSlides(slideIndex += n);
+    var slideIndex = 1;
+    showSlides(slideIndex);
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+    function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}    
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
         }
-        
-        function currentSlide(n) {
-          showSlides(slideIndex = n);
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
         }
-        
-        function showSlides(n) {
-          var i;
-          var slides = document.getElementsByClassName("mySlides");
-          var dots = document.getElementsByClassName("dot");
-          if (n > slides.length) {slideIndex = 1}    
-          if (n < 1) {slideIndex = slides.length}
-          for (i = 0; i < slides.length; i++) {
-              slides[i].style.display = "none";  
-          }
-          for (i = 0; i < dots.length; i++) {
-              dots[i].className = dots[i].className.replace(" active", "");
-          }
-          slides[slideIndex-1].style.display = "block";  
-          dots[slideIndex-1].className += " active";
-        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+    }
     </script>
     <script>
-
-        var slideIndex = 1;
-        showSlides(slideIndex);
-        
-        function plusSlides(n) {
-          showSlides(slideIndex += n);
+    var slideIndexe = 1;
+    showSlide(slideIndexe);
+    function plusSlide(n) {
+        showSlide(slideIndexe += n);
+    }
+    function currentSlid(n) {
+        showSlide(slideIndexe = n);
+    }
+    function showSlide(n) {
+        var i;
+        var slides1 = document.getElementsByClassName("mySlide");
+        var dots1 = document.getElementsByClassName("dot1");
+        if (n > slides1.length) {slideIndexe = 1}    
+        if (n < 1) {slideIndexe = slides1.length}
+        for (i = 0; i < slides1.length; i++) {
+            slides1[i].style.display = "none";  
         }
-        
-        function currentSlides(n) {
-          showSlides(slideIndex = n);
+        for (i = 0; i < dots1.length; i++) {
+            dots1[i].className = dots1[i].className.replace(" active", "");
         }
-        
-        function showSlides(n) {
-          var i;
-          var slides = document.getElementsByClassName("mySlides1");
-          var dots = document.getElementsByClassName("dot");
-          if (n > slides.length) {slideIndex = 1}    
-          if (n < 1) {slideIndex = slides.length}
-          for (i = 0; i < slides.length; i++) {
-              slides[i].style.display = "none";  
-          }
-          for (i = 0; i < dots.length; i++) {
-              dots[i].className = dots[i].className.replace(" active", "");
-          }
-          slides[slideIndex-1].style.display = "block";  
-          dots[slideIndex-1].className += " active";
-        }
+        slides1[slideIndexe-1].style.display = "block";  
+        dots1[slideIndexe-1].className += " active";
+    }
     </script>
+    <script src="js/nav.js"></script>
 </body>
 </html>
