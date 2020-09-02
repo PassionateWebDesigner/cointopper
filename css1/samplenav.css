@@ -1,0 +1,140 @@
+.rowh{
+    max-width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+.logo{
+    float:left;
+    width: auto;
+    margin-top: 40px;
+    margin-left: 40px;
+}
+.main-nav{
+    float:right;
+    margin-top: 55px;
+}
+.mobile-icon{
+    display: none;
+}
+.main-nav li{
+    display: inline-block;
+    list-style-type: none;
+    margin-right: 40px;
+    margin-left: 15px;
+}
+.main-nav li a{
+    color: black;
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 18px;
+    display: inline-block;
+}
+.home{
+    background:linear-gradient(to right,#1c60b8 1%,#3c99dd 100%);
+    color: white !important;
+    border-radius:5px;
+    padding: 10px 26px;
+}
+.clearfix:after{
+    visibility: hidden;
+    display: block;
+    height: 0px;
+    clear: both;
+}
+@media only screen and (max-width: 1219px){
+    .main-nav{
+        display: block;
+        width: 100%;
+    }
+    .mobile-icon{
+        display: inline-block;
+        color: grey;
+        float: right;
+        margin-top: 40px;
+        margin-right: 40px;
+        padding: 10px 15px;
+        border:2px solid grey;
+    }
+    .main-nav li{
+        display: block;
+        margin-top: 10px;
+        width: 100%;
+        margin: 1px;
+    }
+    .main-nav{
+        float: left;
+        margin-top: 18px;
+        padding: 0px;
+    }
+    .main-nav li a{
+        padding-top: 20px;
+        padding-left: 5px;
+        text-decoration: none;
+        color: black;
+        width: 100%;
+    }
+    .home{
+        background:linear-gradient(to right,#1c60b8 1%,#3c99dd 100%);
+        color: white !important;
+        padding-bottom: 16px;
+    }
+    .main-nav a:hover{
+        color: grey;
+    }
+    .scrollmenu{
+        background-color: #fff;
+        overflow:auto;
+        width: 100%;
+        white-space: nowrap;
+    }
+}
+@media only screen and (min-width:280px) and (max-width:320px){
+    .main-nav{
+        display: block;
+        width: 100%;
+    }
+    .mobile-icon{
+        display: inline-block;
+        color: grey;
+        float:right;
+        margin-top: 40px;
+        margin-right: 5px;
+    }
+    .main-nav li{
+        display: block;
+        margin-top: 10px;
+        width: 100%;
+        margin: 1px;
+    }
+    .main-nav{
+        float:left;
+        margin-top: 18px;
+        padding-top: 0px
+    }
+    .main-nav li a{
+        padding-top: 20px;
+        padding-left: 5px;
+        text-decoration: none;
+        color: black;
+        width: 100%;
+        font-size:15px;
+    }
+    .logo{
+        margin-left: 5px;
+        width:150px;
+    }
+    .home{
+        background:linear-gradient(to right,#1c60b8 1%,#3c99dd 100%);
+        color: white !important;
+        padding-bottom: 16px;
+    }
+    .main-menu a:hover{
+        color:grey;
+    }
+    .scrollmenu{
+        background-color: #fff;
+        overflow: auto;
+        width: 100%;
+        white-space: nowrap;
+    }
+}
