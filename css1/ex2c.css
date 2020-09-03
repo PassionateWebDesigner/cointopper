@@ -12,6 +12,9 @@
     margin-left: 150px;
     font-size:17px;
 }
+.gra{
+    width: 150px;
+}
 .divs1{
     display:inline-block;
     margin-left: 100px;
@@ -426,6 +429,10 @@ footer{
     padding: 7px;
     border-radius: 35px;
 }
+.xrp{
+    margin-top: -420px;
+    margin-right: 10px;
+}
 @media (max-width:852px){
     .row1{
         margin: 0;
@@ -763,5 +770,139 @@ footer{
     }
     .rows6{
         float:left;
+    }
+    .xtr{
+        display: none;
+    }
+}
+@media only screen and (min-width:1024px) and (max-width:1366px){
+    .row1{
+        width: 1010px;
+        margin-top: -20px;
+    }
+    .divs{
+        float:left;
+        margin: 0;
+    }
+    .divs1{
+        margin-left:45px;
+        margin-top: 0;
+        padding-bottom: 10px;
+    }
+    .divs2{
+        margin-left:65px;
+        margin-top: 0;
+    }   
+    .divs3{
+        margin-left: 550px;
+        margin-top: -90px;
+        padding-bottom: 5px;
+    }
+    .divs4{
+        margin-top: -110px;
+        margin-right: 70px;
+        float:right;
+        padding-bottom:5px ;
+    }
+    .mk1{
+        display: block;
+    }
+    #bt3{
+        display: block;
+        float:right;
+        margin-right: 40px;
+        margin-top: -80px;
+    }
+    .butt1{
+        margin-left: 60px;
+        margin-bottom: 0;
+        margin-right: 0;
+        margin-top: 30px;
+        width: 140px;
+        height: 70px;
+        float:left;
+    }
+    .butt2{
+        margin-left: 30px;
+        margin-bottom: 0;
+        margin-right: 0;
+        margin-top: 30px;
+        width: 140px;
+        height: 70px;
+    }
+    #bt1{
+        margin-top: 30px;
+        margin-left: 180px;
+        margin-right: -50px;
+    }
+    #bt2{
+        float:right;
+        margin-right: 50px;
+    }
+    .forms{
+        margin-top: -20px;
+    }
+    table{
+        margin: 0;
+    }
+    th{
+        padding: 14px;
+        font-size:16px;
+    }
+    td{
+        padding: 17px;
+        font-size:15px;
+    }
+    .imj{
+        position: absolute;
+        left:5%;
+    }
+    .xtr{
+        display: inline;
+    }
+    .cardbox{
+        width: 220px;
+    }
+    .img1{
+        width: 220px;
+    }
+    .xrp{
+        margin-right: 100px;
+    }
+    #bts{
+        display: inline;
+    }
+    .hr2{
+        margin-left:-490px;
+        margin-right: 30px;
+        margin-top: 40px;
+    }
+    .mk{
+        margin-left: 170px;
+    }
+    .gra{
+        width: 70px;
+        margin-top: -200px;
+    }
+    .td1{
+        margin-top: 50px;
+    }
+    .hr{
+        float:right;
+        margin-right: 250px;
+        margin-top: -30px;
+    }
+    .hr3{
+        float:right;
+        margin-right: 250px;
+        margin-top: -40px;
+    }
+    .text a{
+        font-size:13px;
+    }
+    .mp{
+        float:right;
+        margin-right: 100px;
+        margin-top: -50px;
     }
 }
