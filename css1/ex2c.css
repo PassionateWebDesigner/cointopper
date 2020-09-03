@@ -85,9 +85,6 @@
     font-size:16px;
     padding-top: 5px;
 }
-#sps3{
-    float:right;
-}
 #icon{
     margin: 0;
     padding: 0;
@@ -612,5 +609,159 @@ footer{
     #air{
         margin-top: -10px;
         margin-right: 190px;
+    }
+}
+@media only screen and (min-width:768px) and (max-width:1024px){
+    .row1{
+        width: 750px;
+    }
+    .divs{
+        float:left;
+        margin: 0;
+    }
+    .divs1{
+        margin-left:25px;
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-right: 0;
+    }
+    .divs2{
+        margin-left:25px;
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-right: 0;
+    }   
+    .divs3{
+        margin-left: 400px;
+        margin-top: -80px;
+    }
+    .divs4{
+        margin-left:15px;
+        margin-top: -100px;
+        margin-bottom: 0;
+        margin-right: 60px;
+        float:right;
+    }
+    .mk1{
+        display: block;
+    }
+    .butt1{
+        margin-left: 0;
+        margin-bottom: 0;
+        margin-right: 0;
+        margin-top: 30px;
+        width: 140px;
+        height: 70px;
+        float:left;
+    }
+    .butt2{
+        margin-left: 130px;
+        margin-bottom: 0;
+        margin-right: 0;
+        margin-top: 30px;
+        width: 140px;
+        height: 70px;
+    }
+    #bt1{
+        margin-top: -80px;
+        float:right;
+        margin-right: 10px;
+    }
+    #bt2{
+        margin-top: -80px;
+        margin-left: 200px;
+    }
+    #bt3{
+        display: none;
+    }
+    .dot{
+        margin:0 6px;
+    }
+    #sps3{
+        margin-top: -30px;
+        float:right;
+    }
+    .forms{
+        float: right;
+        margin-right: 25px;
+        margin-top: -5px;
+    }
+    #bts{
+        display: none;
+    }
+    .imj{
+        position: absolute;
+        left:5%;
+    }
+    .dir{
+        display: block;
+        margin-top: 10px;
+    }
+    .hr2{
+        margin-left: -140px;
+    }
+    .hr{
+        margin-left:180px;
+        margin-top: -20px;
+    }
+    .td1{
+        margin-top: 10px;
+    }
+    .hr3{
+        margin-left: 180px;
+        margin-top: -90px;
+    }
+    .cardbox{
+        margin: 0;
+        width: 280px;
+        height: 280px;
+    }
+    .img1{
+        width: 280px;
+        height: 180px;
+    }
+    #cb{
+        float:left;
+        margin-left: -150px;
+    }
+    #cb1{
+        float:right;
+    }
+    footer{
+        margin-top: 30px;
+    }
+    .dot-container1{
+        margin-top: 210px;
+    }
+    .text a{
+        padding-top: -10px;
+    }
+    #ft2{
+        margin-top:-300px;
+        float:right;
+        margin-right: 200px;
+    }
+    #ft5{
+        margin-top:-300px;
+    }
+    #new{
+        margin-left: 40px;
+    }
+    .form-inline{
+        margin-left: 40px;
+    }
+    .rows4{
+        margin-top:-130px;
+        float:right;
+        margin-right: 100px;
+    }
+    .footer-android{
+        width: auto;
+    }
+    .footer-ios{
+        width: auto;
+    }
+    .rows6{
+        float:left;
     }
 }
